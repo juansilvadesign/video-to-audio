@@ -25,7 +25,14 @@ class ConvertThread(QThread):
                 if not self.is_running:
                     break  # Stop conversion if the thread is no longer running
                 video = VideoFileClip(video_path)
-                audio_file = os.path.join(self.output_dir, os.path.basename(video_path).split('.')[0] + '.' + self.output_format)
+                
+                # Extract filename without extension properly (preserving full name)
+                base_filename = os.path.splitext(os.path.basename(video_path))[0]
+                audio_filename = base_filename + '.' + self.output_format
+                audio_file = os.path.join(self.output_dir, audio_filename)
+                
+                # Handle duplicate files - add (1), (2), etc. if file exists
+                audio_file = self.get_unique_filename(audio_file)
 
                 # Convert audio
                 video.audio.write_audiofile(audio_file, bitrate=f"{self.bitrate}k")
@@ -40,6 +47,26 @@ class ConvertThread(QThread):
 
         except Exception as e:
             self.finished_signal.emit(f"Error during conversion: {str(e)}")
+
+    def get_unique_filename(self, filepath):
+        """
+        Generate a unique filename by adding (1), (2), etc. if the file already exists
+        """
+        if not os.path.exists(filepath):
+            return filepath
+        
+        # Split the filepath into directory, name, and extension
+        directory = os.path.dirname(filepath)
+        filename = os.path.basename(filepath)
+        name, ext = os.path.splitext(filename)
+        
+        counter = 1
+        while True:
+            new_name = f"{name} ({counter}){ext}"
+            new_filepath = os.path.join(directory, new_name)
+            if not os.path.exists(new_filepath):
+                return new_filepath
+            counter += 1
 
     def stop(self):
         self.is_running = False
