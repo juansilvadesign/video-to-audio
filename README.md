@@ -127,7 +127,41 @@ deactivate
 git clone https://github.com/juansilvadesign/video-to-audio.git && cd video-to-audio && pip install -r requirements.txt && python app.py
 ```
 
-## 📦 Dependencies
+## � Creating Your Custom Run Script (Windows)
+
+### 📝 Setting Up run.bat
+
+For Windows users, you can create a personalized batch file to quickly launch the application without typing commands each time.
+
+#### ✨ Quick Setup
+
+1. **📋 Copy the Template**
+   - Locate the `template.bat` file in the project folder
+   - Copy its contents to create your own `run.bat`
+
+2. **✏️ Customize the Path**
+   ```batch
+   @echo off
+   echo Starting video-to-audio...
+   REM Replace with your actual project path
+   "C:\Your\Actual\Path\video-to-audio\.env\Scripts\python.exe" app.py
+   pause
+   ```
+
+3. **🎯 Example Configuration**
+   ```batch
+   @echo off
+   echo Starting video-to-audio...
+   "C:\Users\YourName\Documents\video-to-audio\.env\Scripts\python.exe" app.py
+   pause
+   ```
+
+#### 🚀 Usage
+Once configured, simply double-click your `run.bat` file to launch the application instantly!
+
+> **💡 Pro Tip**: Keep your `run.bat` file local and don't commit it to Git since it contains your specific folder paths.
+
+## �📦 Dependencies
 
 ### Core Libraries
 | Package | Version | Purpose | Badge |
