@@ -127,7 +127,7 @@ deactivate
 git clone https://github.com/juansilvadesign/video-to-audio.git && cd video-to-audio && pip install -r requirements.txt && python app.py
 ```
 
-## � Creating Your Custom Run Script (Windows)
+## 🛠 Creating Your Custom Run Script (Windows)
 
 ### 📝 Setting Up run.bat
 
@@ -221,50 +221,45 @@ pip install moviepy==1.0.3 numpy>=1.18.1 imageio>=2.5.0 decorator>=4.3.0 tqdm>=4
 
 ## 🤝 Contributing
 
-We welcome contributions from the community! Here's how you can help make this project even better:
+We welcome contributions from the community! Whether you're fixing bugs, adding features, improving documentation, or sharing ideas, your help makes this project better for everyone.
 
-### 🌟 Ways to Contribute
-- 🐛 **Bug Reports**: Found an issue? Let us know!
-- 💡 **Feature Requests**: Have ideas for improvements?
-- 📝 **Documentation**: Help improve our docs
-- 🔧 **Code Contributions**: Submit pull requests
+**📖 Read our [Contributing Guide](CONTRIBUTING.md)** for detailed information on:
 
-### 🚀 Development Workflow
+- �️ Setting up the development environment
+- � Development workflow and best practices  
+- � Code standards and guidelines
+- 🐛 How to report issues effectively
+- 💡 Submitting feature requests
 
-1. **🍴 Fork** the repository
-   ```powershell
-   # Click the Fork button on GitHub
-   ```
+### Quick Start for Contributors
 
-2. **🌿 Create** a feature branch
-   ```powershell
-   git checkout -b feature/amazing-feature
-   ```
+1. **Fork & Clone** the repository
+2. **Set up** your development environment  
+3. **Create** a feature branch
+4. **Make** your changes with tests
+5. **Submit** a pull request
 
-3. **💻 Make** your changes
-   ```powershell
-   # Write awesome code
-   ```
+**Questions?** Feel free to [open an issue](https://github.com/juansilvadesign/video-to-audio/issues) or reach out via email!
 
-4. **📝 Commit** your changes
-   ```powershell
-   git commit -m 'Add amazing feature'
-   ```
+## � Security
 
-5. **🚀 Push** to your branch
-   ```powershell
-   git push origin feature/amazing-feature
-   ```
+Security is important to us. If you discover a security vulnerability, please review our **[Security Policy](SECURITY.md)** for instructions on how to report it responsibly.
 
-6. **🎉 Create** a Pull Request
+### 🛡️ Security Features
+- Input validation for video files
+- Safe file handling and processing
+- Secure temporary file management
+- Regular dependency updates
 
-### 📋 Contribution Guidelines
-- Follow existing code style and conventions
-- Add tests for new features when applicable
-- Update documentation as needed
-- Be respectful and constructive in discussions
+### 📋 Quick Security Guidelines
+- Always use the latest version
+- Only process trusted video files
+- Run with minimal necessary permissions
+- Keep your system updated
 
-## 📄 License
+**🚨 For security vulnerabilities, please email [contact@juansilva.design](mailto:contact@juansilva.design) instead of creating public issues.**
+
+## �📄 License
 
 <div align="center">
 
@@ -325,7 +320,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ### 🎉 Thank You for Using Video to Audio Converter!
 
-*Made with 💜 by **Juan Pablo***
+*Made with 💜 by **Juan Silva***
 
 **⭐ If you found this project helpful, please consider giving it a star!**
 
