@@ -1,17 +1,18 @@
 <div align="center">
+  <img src="icons/logo-v1.png" alt="Video to Audio Converter Logo" width="128" height="128">
 
-# 🎬➡️🎵 Video to Audio Converter
-
-[![Python](https://img.shields.io/badge/Python-3.7%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![PyQt5](https://img.shields.io/badge/PyQt5-GUI-green?style=for-the-badge&logo=qt&logoColor=white)](https://pypi.org/project/PyQt5/)
-[![MoviePy](https://img.shields.io/badge/MoviePy-Video%20Processing-red?style=for-the-badge&logo=video&logoColor=white)](https://pypi.org/project/moviepy/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://opensource.org/licenses/MIT)
-
-![GitHub stars](https://img.shields.io/github/stars/juansilvadesign/video-to-audio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/juansilvadesign/video-to-audio?style=social)
-![GitHub issues](https://img.shields.io/github/issues/juansilvadesign/video-to-audio?style=social)
-
-*A powerful, user-friendly Python application for seamless video-to-audio conversion* 🎯
+   # 🎬➡️🎵 Video to Audio Converter
+   
+   [![Python](https://img.shields.io/badge/Python-3.7%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+   [![PyQt5](https://img.shields.io/badge/PyQt5-GUI-green?style=for-the-badge&logo=qt&logoColor=white)](https://pypi.org/project/PyQt5/)
+   [![MoviePy](https://img.shields.io/badge/MoviePy-Video%20Processing-red?style=for-the-badge&logo=video&logoColor=white)](https://pypi.org/project/moviepy/)
+   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://opensource.org/licenses/MIT)
+   
+   ![GitHub stars](https://img.shields.io/github/stars/juansilvadesign/video-to-audio?style=social)
+   ![GitHub forks](https://img.shields.io/github/forks/juansilvadesign/video-to-audio?style=social)
+   ![GitHub issues](https://img.shields.io/github/issues/juansilvadesign/video-to-audio?style=social)
+   
+   *A powerful, user-friendly Python application for seamless video-to-audio conversion* 🎯
 
 </div>
 
