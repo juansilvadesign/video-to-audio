@@ -43,8 +43,8 @@ if exist "!VENV_ACTIVATE!" (
         echo [*] Starting Application...
         echo --------------------------------------------------------
         
-        REM Run the application
-        python app.py
+        REM Run the application using full path to venv python
+        "!VENV_DIR!\Scripts\python.exe" app.py
         
         echo --------------------------------------------------------
         echo [*] Application closed.
@@ -66,7 +66,7 @@ if !errorlevel! equ 0 (
     echo.
     echo [*] Starting Application (System Python)...
     echo --------------------------------------------------------
-    python app.py
+    python.exe app.py
     echo --------------------------------------------------------
 ) else (
     echo.
